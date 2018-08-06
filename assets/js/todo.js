@@ -23,3 +23,8 @@ $("input[type='text']").on("keypress",function(event){
         $("ul").append("<li><span><i class= 'fa fa-trash'></i></span> " + todoText + "</li>");
     }
 });
+
+// Hide/Show the input field
+$("h1 i").on("click",function(){
+    $("input[type='text']").fadeToggle();
+});
